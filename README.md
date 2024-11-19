@@ -1,4 +1,4 @@
-# **Proyecto Final POO - Documentación del Código**
+# **Proyecto - Documentación del Código**
 
 Este proyecto implementa una aplicación de gestión escolar en Java. Permite la creación, lectura, actualización y eliminación (CRUD) de registros de alumnos, además de generar datos aleatorios como nombres, direcciones, edades e historial académico. El sistema también incluye un proceso de autenticación mediante usuario y contraseña al inicio.
 
@@ -17,6 +17,7 @@ Este proyecto implementa una aplicación de gestión escolar en Java. Permite la
    - AlumnoCRUD
    - Usuario
    - Login
+   - QuickSort
 4. Ejecución del Programa
 5. Requisitos
 
@@ -240,11 +241,28 @@ Esta clase gestiona la autenticación de los usuarios, permitiendo verificar si 
 
 ---
 
+### **QuickSort**
+
+La clase **QuickSort** implementa el algoritmo de ordenación QuickSort para ordenar una lista de
+
+ alumnos de acuerdo con su indicador escolar. El orden es en **orden inverso**, es decir, los alumnos con el indicador escolar más alto aparecerán primero en la lista.
+
+#### Métodos:
+- **public static void quickSort(List<Alumno> lista, int inicio, int fin):**
+  - Método principal que ordena la lista utilizando el algoritmo QuickSort.
+  
+- **private static int particionar(List<Alumno> lista, int inicio, int fin):**
+  - Método de partición utilizado en QuickSort, que reorganiza los elementos alrededor de un pivote.
+  - En este caso, los alumnos con un indicador escolar mayor se colocan antes que los de menor indicador (orden inverso).
+
+- **private static void intercambiar(List<Alumno> lista, int i, int j):**
+  - Método que intercambia dos elementos en la lista de alumnos.
+
+---
+
 ## **Ejecución del Programa**
 
-Al ejecutar el programa, el administrador debe
-
- ingresar su nombre de usuario y contraseña. Tras la autenticación, se generarán automáticamente 1000 registros de alumnos con datos aleatorios. Luego, el sistema ofrecerá un menú interactivo para realizar las operaciones CRUD sobre los alumnos.
+Para ejecutar el programa, basta con ejecutar la clase **Proyecto** que contiene el método `main`. Al iniciar el sistema, se solicitarán las credenciales de un usuario. Tras la autenticación, el sistema generará 1000 alumnos de manera aleatoria y permitirá realizar las operaciones CRUD.
 
 ---
 
