@@ -253,7 +253,3 @@ Al ejecutar el programa, el administrador debe
 - **Java 8 o superior.**
 - **Archivos CSV de nombres, apellidos y materias** necesarios para la generación aleatoria de datos.
 - **Bibliotecas adicionales** como `java.util.*` para manejo de listas y aleatorización, y `java.io.*` para manejo de archivos.
-
----
-
-Este documento presenta una visión general de las clases y funcionalidad del proyecto, brindando información sobre cómo está estructurado y cómo se puede utilizar el sistema.
